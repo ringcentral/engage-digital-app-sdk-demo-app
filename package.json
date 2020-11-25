@@ -1,0 +1,56 @@
+{
+  "name": "engage-digital-app-sdk-demo-app",
+  "version": "1.0.0",
+  "description": "Demo Engage Digital App SDK Application",
+  "main": "src/index.js",
+  "scripts": {
+    "ngrok": "npm run proxy",
+    "proxy": "ngrok http 3000",
+    "start": "npm run dev",
+    "dev": "node -r @babel/register src",
+    "lint": "./node_modules/.bin/standard",
+    "fix": "./node_modules/.bin/standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ringcentral/engage-digital-app-sdk-demo-app.git"
+  },
+  "keywords": [
+    "Engage",
+    "Digital",
+    "RingCentral",
+    "app",
+    "SDK",
+    "demo"
+  ],
+  "author": "Drake Zhao <zxdong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ringcentral/engage-digital-app-sdk-demo-app/issues"
+  },
+  "homepage": "https://github.com/ringcentral/engage-digital-app-sdk-demo-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.8",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.1",
+    "babel-eslint": "^10.1.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "morgan": "^1.10.0",
+    "ngrok": "^3.3.0",
+    "ringcentral-engage-client": "^0.2.2",
+    "standard": "^16.0.3"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "SMCC"
+    ],
+    "ignore": [
+      "*-compiled.js",
+      "/dist/"
+    ]
+  }
+}
