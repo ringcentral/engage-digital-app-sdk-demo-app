@@ -15,4 +15,6 @@ Demo Engage Digital App SDK Application
 9. Now go to your email app, send a email to the email channel you set, with content: `My customer id is #1234, can you help`
 10. Open browser console of Agents tab, refresh and click the `1234`, you will see the message in console.
 
+We have a video to show all steps above: https://youtu.be/_NExqVn6Nro
+
 Now you get a sense what the SDK app can do, do check our SDK methods document: https://engage-digital-api-docs.readthedocs.io/en/latest/app-sdk/methods/, a lot more methods.
