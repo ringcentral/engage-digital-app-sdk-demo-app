@@ -16,7 +16,7 @@ function onLoad () {
       return part.replace(/^#/, '')
     },
     onClick: function (value) {
-      console.debug('T​his is client ' + value + '​​on message with id ' + this.id())
+      console.log('T​his is client ' + value + '​​on message with id ' + this.id())
     }
   })
 }

@@ -4,6 +4,8 @@ Demo Engage Digital App SDK Application
 
 ## Step by step guide to use developer application (SDK)
 
+In these steps will not need start a server.
+
 1. Get an RingCentral Engage account, [request a demo](https://www.ringcentral.com/view_demo_cx.html).
 2. Login to your RingCentral Engage admin console.
 3. Create a email community in RingCentral Engage Digital -> "ADMIN" -> "CHANNELS" -> "Community profiles".
