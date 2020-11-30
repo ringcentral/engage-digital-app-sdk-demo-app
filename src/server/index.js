@@ -3,6 +3,11 @@ import bodyParser from 'body-parser'
 import morgan from 'morgan'
 import oauth from './routes/oauth'
 import jwt from 'express-jwt'
+import setting from './routes/setting'
+import api from './routes/api'
+import initDb from './common/init-db'
+import admin from './routes/admin'
+import { resolve } from 'path'
 
 const jwtAuth = jwt({
   secret: process.env.SERVER_SECRET,
@@ -19,16 +24,20 @@ const app = express()
 app.use(morgan('tiny'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+app.set('views', resolve(__dirname, './views'))
+app.set('view engine', 'pug')
 
 app.get('/test', (req, res) => res.send('server running'))
 app.post('/api/action', jwtAuth, errHandler, api)
 app.get('/oauth', oauth)
-app.get('/setting', setting)
+app.get(process.env.SERVER_HOME, setting)
+admin(app)
 
 const {
-  PORT,
-  HOST
+  RINGCENTRAL_PORT: port,
+  RINGCENTRAL_HOST: host
 } = process.env
-app.listen(PORT, HOST, () => {
-  console.log('=> server running on', `http://${HOST}:${PORT}`)
+app.listen(port, host, () => {
+  initDb()
+  console.log('=> server running on', `http://${host}:${port}`)
 })

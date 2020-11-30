@@ -3,7 +3,7 @@
  * /api
  */
 
-import { User } from '../models/gh'
+import { User } from '../model/engage-digital'
 import _ from 'lodash'
 
 const supportedActions = [
@@ -45,7 +45,7 @@ export default async (req, res) => {
       url,
       headers = undefined
     } = body
-    result = await userInst.gh.request({
+    result = await userInst.ed.request({
       data,
       method,
       url,

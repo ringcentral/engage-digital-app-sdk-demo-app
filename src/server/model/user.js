@@ -8,21 +8,15 @@ export const Service = sequelize.define('EngageDigitalSDKApp1User', {
     primaryKey: true,
     defaultValue: generate
   },
-  gh_user_info: {
+  user: {
     type: Sequelize.JSON
   },
-  gh_token: {
-    type: Sequelize.STRING
-  },
-  gh_scope: {
+  token: {
     type: Sequelize.STRING
   },
   enabled: {
     type: Sequelize.BOOLEAN,
     defaultValue: true
-  },
-  webhooks: { // webhook ids
-    type: Sequelize.STRING
   },
   data: { // all other data associcated with this user
     type: Sequelize.JSON

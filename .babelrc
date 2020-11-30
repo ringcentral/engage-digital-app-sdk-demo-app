@@ -1,11 +1,29 @@
 {
   "presets": [
+    "@babel/react",
+    ["@babel/env", {
+      "targets": {
+        "chrome": 78,
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+    "babel-plugin-lodash",
     [
-      "@babel/preset-env",
+      "import",
       {
-        "targets": {
-          "node": "8.10"
-        }
+        "libraryName": "antd",
+        "style": true
+      }
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": false
       }
     ]
   ]

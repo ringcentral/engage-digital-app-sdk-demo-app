@@ -16,7 +16,7 @@ if (process.env.DIALECT === 'dynamodb') {
 }
 
 const sequelize = new Sequelize(
-  process.env.RINGCENTRAL_DATABASE_CONNECTION_URI,
+  process.env.RINGCENTRAL_DATABASE_CONNECTION_URI || '',
   config
 )
 
