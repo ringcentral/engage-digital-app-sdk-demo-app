@@ -21,7 +21,7 @@ We have a video to show all steps above: https://youtu.be/_NExqVn6Nro
 
 Now you get a sense what the SDK app can do, do check our SDK methods document: https://engage-digital-api-docs.readthedocs.io/en/latest/app-sdk/methods/, a lot more methods.
 
-## Setup a setting page
+## Setup a configuration page
 
 Once you got the `Step by step guide` running well, you can continue to try the configuration page.
 
