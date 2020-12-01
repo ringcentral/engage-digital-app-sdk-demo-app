@@ -2,7 +2,7 @@
  * User class
  */
 
-import RingCentralEngage from './ext'
+import RingCentralEngage from 'ringcentral-engage-client'
 import { Service } from './user'
 
 export class User extends Service {}

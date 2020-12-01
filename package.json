@@ -67,7 +67,7 @@
     "nanoid": "^3.1.18",
     "ngrok": "^3.3.0",
     "pug": "^3.0.0",
-    "ringcentral-engage-client": "^0.2.2",
+    "ringcentral-engage-client": "^0.4.1",
     "sequelize": "^5.22.3",
     "shelljs": "^0.8.4",
     "standard": "^16.0.3",
