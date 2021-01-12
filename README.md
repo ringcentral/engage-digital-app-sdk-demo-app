@@ -1,4 +1,4 @@
-# engage-digital-app-sdk-demo-app
+# Engage Digital App SDK Demo App
 
 Demo Engage Digital App SDK Application
 
